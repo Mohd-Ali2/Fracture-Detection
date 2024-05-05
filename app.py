@@ -23,7 +23,7 @@ def predict(test_image):
     result = loaded_model.predict(test_image)
     return result
 
-st.sidebar.image(r"C:\Users\Ali\Downloads\transparent-stethoscope-serious-female-doctor-with-stethoscope-white-coat65ee80efa29936.918574981710129391666.png", width=320, use_column_width=True)
+st.sidebar.image("serious-female-doctor-with-stethoscope.png", width=320, use_column_width=True)
 # Button to trigger the prediction
 st.sidebar.title('🔒Instructions for Using the Web Application:')
 st.sidebar.subheader('1. Upload Image')
@@ -48,7 +48,7 @@ st.sidebar.link_button(':black_large_square: Github ', url='github.com/Mohd-Ali2
 # User interface for uploading an image
 upload_file = st.file_uploader('Choose an image', type=['jpeg', 'png', 'webp'])
 if upload_file is None:
-    st.image(r"C:\Users\Ali\Downloads\vecteezy_3d-robot-illustration-kawaii-friendly-suitable-for-tech-mascot_23220595.png",use_column_width=False, width=310)
+    st.image("3drobot.png",use_column_width=False, width=310)
 # Display the uploaded image
 if upload_file is not None:
     uploaded_image = Image.open(upload_file)
